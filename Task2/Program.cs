@@ -35,19 +35,19 @@ int colums = ReadStringCons("Введите индекс столбца: ");
 
 Random rnd = new Random();
 
-int[,] array = new int[rnd.Next(2,8), rnd.Next(2,8)];
+int[,] array = new int[rnd.Next(2, 8), rnd.Next(2, 8)];
 
 FillArrayRandomIntNum(array);
 
 PrintArray(array);
 Console.WriteLine();
 
-if(rows>array.GetLength(0) || (colums>array.GetLength(1)))
+if (rows > array.GetLength(0) || (colums > array.GetLength(1)))
 {
     Console.WriteLine("Такого элемента нет");
 }
 else
 {
-    Console.WriteLine("Элемент с индексом ["+rows+","+colums+"] => " +array[rows,colums]);
+    Console.WriteLine("Элемент с индексом [" + rows + "," + colums + "] => " + array[rows, colums]);
 }
 
