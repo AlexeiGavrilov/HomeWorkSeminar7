@@ -18,7 +18,8 @@ void FillArrayRandomDoubleNum(double[,] arr1)
     {
         for (int j = 0; j < arr1.GetLength(1); j++)
         {
-            arr1[i, j] = rnd.Next(-2, 5) + Math.Round(rnd.NextDouble(), 2);
+            arr1[i, j] = Math.Round( rnd.Next(2,5) + rnd.NextDouble(),2);
+             
         }
     }
 }
